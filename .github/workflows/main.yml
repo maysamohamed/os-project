@@ -1,1 +1,13 @@
+on:
+ push:
+  brachs:
+    - master
 
+  
+jobs:
+ build:
+  runs-on: ubuntu-latest
+
+  steps:
+    - name: "testing github action"
+      run: echo hello
