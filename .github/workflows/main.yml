@@ -21,6 +21,6 @@ jobs:
     - name: "build image"
       run: docker build -t  ${{secrets.DOCKER_USERNAME}}/maysa_mohamed2023040369 .
     - name: "push in docker hub"
-      run : docker push   ${{secrets.DOCKER_USERNAME}}/ maysa_mohamed2023040369
+      run : docker push   ${{secrets.DOCKER_USERNAME}}/maysa_mohamed2023040369
     - name: "make a contanier"
       run:  docker run -it --name cont  maysa_mohamed2023040369
